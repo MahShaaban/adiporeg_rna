@@ -44,6 +44,21 @@ Note: The data quality and the platform discrepencies are not inluded in these c
 
 ### 2.2 Run table
 
+All samples has single runs.
+
+| Sequencer Model             | Runs |
+|-----------------------------|------|
+| Illumina Genome Analyzer II | 3    |
+| Illumina HiSeq 1500         | 20   |
+| Illumina HiSeq 2000         | 12   |
+| Illumina HiSeq 2500         | 15   |
+| NextSeq 500                 | 3    |
+
+| Library Type | Runs |
+|--------------|------|
+| PAIRED       | 18   |
+| SINGLE       | 35   |
+
 ### 2.3 Studies 
 
 [1] H. Al Adhami, B. Evano, A. Le Digarcher, et al. “A systems-level approach to parental genomic
