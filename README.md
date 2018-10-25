@@ -9,7 +9,7 @@ This repository aims to detail the following:
 
 ## 1. The search strategy
 
-The term "3T3-L1" was used to search the NCBI **SRA** repository. The results were sent to the **run selector**. 1,176 runs were viewed. The runs were faceted by **Assay Type** and the "rna-seq" which resulted in 323 runs. Only 101 samples from 17 different studies were included after being manually reviewed to fit the following criteria:
+The term "3T3-L1" was used to search the NCBI **SRA** repository. The results were sent to the **run selector**. 1,176 runs were viewed. The runs were faceted by **Assay Type** and the "rna-seq" which resulted in 323 runs. Only 98 samples from 16 different studies were included after being manually reviewed to fit the following criteria:
 * The raw data is available from GEO and has a GEO identifier (GSM#)
 * The raw data is linked to a published publicly available article
 * The protocols for generating the data sufficiently describe the origin of the cell line, the differentiation medium and the time points when the samples were collected. 
@@ -25,7 +25,7 @@ Note: The data quality and the platform discrepencies are not inluded in these c
 |-------|--------------|---------|
 | Early | -96          | 1       |
 |       | -48          | 6       |
-|       | 0            | 23      |
+|       | 0            | 22      |
 |       | 1            | 1       |
 |       | 2            | 3       |
 |       | 4            | 7       |
@@ -33,7 +33,7 @@ Note: The data quality and the platform discrepencies are not inluded in these c
 |       | 10           | 2       |
 |       | 24           | 8       |
 |       | 28           | 1       |
-|       | 48           | 19      |
+|       | 48           | 18      |
 | Late  | 4            | 2       |
 |       | 96           | 2       |
 |       | 120          | 1       |
@@ -50,21 +50,22 @@ All samples has single runs.
 |-----------------------------|------|
 | Illumina Genome Analyzer II | 3    |
 | Illumina HiSeq 1500         | 20   |
-| Illumina HiSeq 2000         | 12   |
-| Illumina HiSeq 2500         | 15   |
-| NextSeq 500                 | 3    |
+| Illumina HiSeq 2000         | 47   |
+| Illumina HiSeq 2500         | 39   |
+| Ion Torrent Proton          | 4    |
+| NextSeq 500                 | 6    |
 
 | Library Type | Runs |
 |--------------|------|
-| PAIRED       | 18   |
-| SINGLE       | 35   |
+| PAIRED       | 30   |
+| SINGLE       | 68   |
 
 ### 2.3 Studies 
 
 [1] H. Al Adhami, B. Evano, A. Le Digarcher, et al. “A systems-level approach to parental genomic
-imprinting: The imprinted gene network includes extracellular matrix genes and regulates cell
-cycle exit and differentiation”. In: _Genome Research_ 25.3 (Mar. 2015), pp. 353-367. ISSN:
-15495469. DOI: 10.1101/gr.175919.114. <URL: http://www.ncbi.nlm.nih.gov/pubmed/25614607
+imprinting: The imprinted gene network includes extracellular matrix genes and regulates cell cycle
+exit and differentiation”. In: _Genome Research_ 25.3 (Mar. 2015), pp. 353-367. ISSN: 15495469. DOI:
+10.1101/gr.175919.114. <URL: http://www.ncbi.nlm.nih.gov/pubmed/25614607
 http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC4352888
 http://genome.cshlp.org/lookup/doi/10.1101/gr.175919.114>.
 
@@ -87,52 +88,48 @@ Kinase Reveals Differential Regulation of Downstream Effector Pathways in Adipoc
 Reports_ 17.12 (2016), pp. 3305-3318. ISSN: 22111247. DOI: 10.1016/j.celrep.2016.11.082. eprint:
 15334406.
 
-[6] C. Y. Chen, R. B. Lanz, C. J. Walkey, et al. “Maf1 and Repression of RNA Polymerase
-III-Mediated Transcription Drive Adipocyte Differentiation”. In: _Cell Reports_ 24.7 (Aug. 2018),
-pp. 1852-1864. ISSN: 22111247. DOI: 10.1016/j.celrep.2018.07.046.
-
-[7] X. Chen, I. Ayala, C. Shannon, et al. “The diabetes gene and wnt pathway effector TCF7L2
+[6] X. Chen, I. Ayala, C. Shannon, et al. “The diabetes gene and wnt pathway effector TCF7L2
 regulates adipocyte development and function”. In: _Diabetes_ 67.4 (2018), pp. 554-568. ISSN:
 1939327X. DOI: 10.2337/db17-0318.
 
-[8] D. Duteil, E. Metzger, D. Willmann, et al. “LSD1 promotes oxidative metabolism of white
-adipose tissue”. In: _Nature Communications_ 5.May (Jun. 2014), p. 4093. ISSN: 20411723. DOI:
+[7] D. Duteil, E. Metzger, D. Willmann, et al. “LSD1 promotes oxidative metabolism of white adipose
+tissue”. In: _Nature Communications_ 5.May (Jun. 2014), p. 4093. ISSN: 20411723. DOI:
 10.1038/ncomms5093. <URL: http://www.nature.com/doifinder/10.1038/ncomms5093>.
 
-[9] G. E. Lim, T. Albrecht, M. Piske, et al. “14-3-3$\zeta$ coordinates adipogenesis of visceral
+[8] G. E. Lim, T. Albrecht, M. Piske, et al. “14-3-3$\zeta$ coordinates adipogenesis of visceral
 fat”. In: _Nature Communications_ (2015). ISSN: 20411723. DOI: 10.1038/ncomms8671.
 
-[10] K. A. Lo, A. Labadorf, N. J. Kennedy, et al. “Analysis of In Vitro Insulin-Resistance Models
-and Their Physiological Relevance to InVivo Diet-Induced Adipose Insulin Resistance”. In: _Cell
-Reports_ 5.1 (Oct. 2013), pp. 259-270. ISSN: 22111247. DOI: 10.1016/j.celrep.2013.08.039. <URL:
+[9] K. A. Lo, A. Labadorf, N. J. Kennedy, et al. “Analysis of In Vitro Insulin-Resistance Models and
+Their Physiological Relevance to InVivo Diet-Induced Adipose Insulin Resistance”. In: _Cell Reports_
+5.1 (Oct. 2013), pp. 259-270. ISSN: 22111247. DOI: 10.1016/j.celrep.2013.08.039. <URL:
 http://www.ncbi.nlm.nih.gov/pubmed/24095730
 http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC3874466>.
 
-[11] G. Maroni, V. A. Tkachuk, A. Egorov, et al. “Prep1 prevents premature adipogenesis of
+[10] G. Maroni, V. A. Tkachuk, A. Egorov, et al. “Prep1 prevents premature adipogenesis of
 mesenchymal progenitors”. In: _Scientific Reports_ 7.1 (Nov. 2017), p. 15573. ISSN: 20452322. DOI:
 10.1038/s41598-017-15828-1.
 
-[12] Y. Park, L. Wang, A. Giampietro, et al. “Distinct Roles of Transcription Factors KLF4,
-Krox20, and Peroxisome Proliferator-Activated Receptor g in Adipogenesis”. In: _Molecular and
-Cellular Biology_ 37.2 (2017), pp. e00554-16. ISSN: 0270-7306. DOI: 10.1128/MCB.00554-16. <URL:
+[11] Y. Park, L. Wang, A. Giampietro, et al. “Distinct Roles of Transcription Factors KLF4, Krox20,
+and Peroxisome Proliferator-Activated Receptor g in Adipogenesis”. In: _Molecular and Cellular
+Biology_ 37.2 (2017), pp. e00554-16. ISSN: 0270-7306. DOI: 10.1128/MCB.00554-16. <URL:
 http://mcb.asm.org/lookup/doi/10.1128/MCB.00554-16>.
 
-[13] K. W. Ryu, T. Nandu, J. Kim, et al. “Metabolic regulation of transcription through
+[12] K. W. Ryu, T. Nandu, J. Kim, et al. “Metabolic regulation of transcription through
 compartmentalized NAD+biosynthesis”. In: _Science_ 360.6389 (2018). ISSN: 10959203. DOI:
 10.1126/science.aan5780.
 
-[14] R. Siersbæk, S. Baek, A. Rabiee, et al. “Molecular architecture of transcription factor
-hotspots in early adipogenesis”. In: _Cell Reports_ 7.5 (Jun. 2014), pp. 1434-1442. ISSN:
-22111247. DOI: 10.1016/j.celrep.2014.04.043.
+[13] R. Siersbæk, S. Baek, A. Rabiee, et al. “Molecular architecture of transcription factor
+hotspots in early adipogenesis”. In: _Cell Reports_ 7.5 (Jun. 2014), pp. 1434-1442. ISSN: 22111247.
+DOI: 10.1016/j.celrep.2014.04.043.
 
-[15] R. Siersbæk, J. G. S. Madsen, B. M. Javierre, et al. “Dynamic Rewiring of Promoter-Anchored
-Chromatin Loops during Adipocyte Differentiation”. In: _Molecular Cell_ 66.3 (2017), pp.
-420-435.e5. ISSN: 10974164. DOI: 10.1016/j.molcel.2017.04.010.
+[14] R. Siersbæk, J. G. S. Madsen, B. M. Javierre, et al. “Dynamic Rewiring of Promoter-Anchored
+Chromatin Loops during Adipocyte Differentiation”. In: _Molecular Cell_ 66.3 (2017), pp. 420-435.e5.
+ISSN: 10974164. DOI: 10.1016/j.molcel.2017.04.010.
 
-[16] D. You, E. Nilsson, D. E. Tenen, et al. “Dnmt3a is an epigenetic mediator of adipose insulin
+[15] D. You, E. Nilsson, D. E. Tenen, et al. “Dnmt3a is an epigenetic mediator of adipose insulin
 resistance”. In: _eLife_ 6 (2017). ISSN: 2050084X. DOI: 10.7554/eLife.30766.
 
-[17] X. Zhao, Y. Yang, B. F. Sun, et al. “FTO-dependent demethylation of N6-methyladenosine
+[16] X. Zhao, Y. Yang, B. F. Sun, et al. “FTO-dependent demethylation of N6-methyladenosine
 regulates mRNA splicing and is required for adipogenesis”. In: _Cell Research_ 24.12 (Dec. 2014),
 pp. 1403-1419. ISSN: 17487838. DOI: 10.1038/cr.2014.151.
 
